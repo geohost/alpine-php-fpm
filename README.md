@@ -1,18 +1,18 @@
-# Alpine PHP-FPM [![CI](https://github.com/joseluisq/alpine-php-fpm/workflows/CI/badge.svg)](https://github.com/joseluisq/alpine-php-fpm/actions?query=workflow%3ACI) [![Docker Image](https://img.shields.io/docker/pulls/joseluisq/php-fpm.svg)](https://hub.docker.com/r/joseluisq/php-fpm/)
+# Alpine PHP-FPM [![CI](https://github.com/geohost/alpine-php-fpm/workflows/CI/badge.svg)](https://github.com/geohost/alpine-php-fpm/actions?query=workflow%3ACI) [![Docker Image](https://img.shields.io/docker/pulls/geohost/php-fpm.svg)](https://hub.docker.com/r/geohost/php-fpm/)
 
 > [PHP-FPM](https://www.php.net/manual/en/install.fpm.php) (PHP [7.4](https://www.php.net/ChangeLog-7.php#PHP_7_4), [8.0](https://www.php.net/ChangeLog-8.php#PHP_8_0) and [8.1](https://www.php.net/ChangeLog-8.php#PHP_8_1)) with essential extensions on top of [Alpine Linux 3.14](https://alpinelinux.org/).
 
 ### PHP 7.4
 
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/joseluisq/php-fpm/7.4) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/joseluisq/php-fpm/7.4)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/geohost/php-fpm/7.4) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/geohost/php-fpm/7.4)
 
 ### PHP 8.0
 
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/joseluisq/php-fpm/8.0) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/joseluisq/php-fpm/8.0)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/geohost/php-fpm/8.0) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/geohost/php-fpm/8.0)
 
 ### PHP 8.1
 
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/joseluisq/php-fpm/8.1) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/joseluisq/php-fpm/8.1)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/geohost/php-fpm/8.1) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/geohost/php-fpm/8.1)
 
 ### Built-in extensions
 
@@ -67,24 +67,24 @@
 
 ## Usage
 
-🐳 Available on Docker Hub → [hub.docker.com/r/joseluisq/php-fpm](https://hub.docker.com/r/joseluisq/php-fpm/)
+🐳 Available on Docker Hub → [hub.docker.com/r/geohost/php-fpm](https://hub.docker.com/r/geohost/php-fpm/)
 
 ```sh
-docker pull joseluisq/php-fpm:7.4
+docker pull geohost/php-fpm:7.4
 # Or
-docker pull joseluisq/php-fpm:8.0
+docker pull geohost/php-fpm:8.0
 # Or
-docker pull joseluisq/php-fpm:8.1
+docker pull geohost/php-fpm:8.1
 ```
 
 ### Dockerfile
 
 ```Dockerfile
-FROM joseluisq/php-fpm:7.4
+FROM geohost/php-fpm:7.4
 # Or
-FROM joseluisq/php-fpm:8.0
+FROM geohost/php-fpm:8.0
 # Or
-FROM joseluisq/php-fpm:8.1
+FROM geohost/php-fpm:8.1
 ```
 
 ### Run a container
@@ -92,11 +92,11 @@ FROM joseluisq/php-fpm:8.1
 To give it a quick try just execute any of those commands and then navigate to [localhost:8088](http://localhost:8088)
 
 ```sh
-docker run --rm -p 8088:80 joseluisq/php-fpm:8.1 sh -c "echo '<?php phpinfo();' > index.php; php -S [::]:80 -t ."
+docker run --rm -p 8088:80 geohost/php-fpm:8.1 sh -c "echo '<?php phpinfo();' > index.php; php -S [::]:80 -t ."
 # Or
-docker run --rm -p 8088:80 joseluisq/php-fpm:8.0 sh -c "echo '<?php phpinfo();' > index.php; php -S [::]:80 -t ."
+docker run --rm -p 8088:80 geohost/php-fpm:8.0 sh -c "echo '<?php phpinfo();' > index.php; php -S [::]:80 -t ."
 # Or
-docker run --rm -p 8088:80 joseluisq/php-fpm:7.4 sh -c "echo '<?php phpinfo();' > index.php; php -S [::]:80 -t ."
+docker run --rm -p 8088:80 geohost/php-fpm:7.4 sh -c "echo '<?php phpinfo();' > index.php; php -S [::]:80 -t ."
 ```
 
 [View Docker Compose Examples](#docker-compose-examples)
@@ -159,17 +159,17 @@ docker-compose -f examples/apache/docker-compose.yml up
 
 ## Contributions
 
-Feel free to send a [pull request](https://github.com/joseluisq/alpine-php-fpm/pulls) or file some [issue](https://github.com/joseluisq/alpine-php-fpm/issues).
+Feel free to send a [pull request](https://github.com/geohost/alpine-php-fpm/pulls) or file some [issue](https://github.com/geohost/alpine-php-fpm/issues).
 
 
 ## Contributions
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in current work by you, as defined in the Apache-2.0 license, shall be dual licensed as described below, without any additional terms or conditions.
 
-Feel free to send some [Pull request](https://github.com/joseluisq/alpine-php-fpm/pulls) or [issue](https://github.com/joseluisq/alpine-php-fpm/issues).
+Feel free to send some [Pull request](https://github.com/geohost/alpine-php-fpm/pulls) or [issue](https://github.com/geohost/alpine-php-fpm/issues).
 
 ## License
 
 This work is primarily distributed under the terms of both the [MIT license](LICENSE-MIT) and the [Apache License (Version 2.0)](LICENSE-APACHE).
 
-© 2020-present [Jose Quintana](https://git.io/joseluisq)
+© 2020-present [Jose Quintana](https://git.io/geohost)
